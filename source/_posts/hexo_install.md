@@ -4,6 +4,7 @@ categories: []
 date: 2019-04-20 18:09:00
 ---
 ### 1. 软件安装  
+
 参考：[用Github+Hexo搭建你的个人博客：搭建篇](https://www.makcyun.top/hexo01.html)
     
     sudo apt-get install nodejs  
@@ -14,6 +15,7 @@ date: 2019-04-20 18:09:00
     npm install hexo-deployer-git --save 
 
 ### 2. 软件配置 
+    
     hexo init blog  
     cd blog  
     npm install 
@@ -29,9 +31,11 @@ date: 2019-04-20 18:09:00
 <!--more-->
 	
 ### 3. Github设置  
+
 参考：[小白独立搭建博客--Github Pages和Hexo简明教程](https://my.oschina.net/ryaneLee/blog/638440)
 
 - 注册gibhub，创建一个名为username.github.io的repository,在setting里，选择GitHub Pages，choose a theme
+
 - 将博客部署到Github Pages上  
       
       ssh-keygen -t rsa -C "your_email@example.com"
@@ -52,6 +56,7 @@ date: 2019-04-20 18:09:00
       hexo d -g
       
 ### 4. 美化博客
+
 参考：[用Github+Hexo搭建你的个人博客：美化篇](https://www.makcyun.top/hexo02.html)  
 
 - 使用新主题,设置语言及网站信息
@@ -73,6 +78,7 @@ date: 2019-04-20 18:09:00
 
      修改blog/themes/hexo-theme-next/_config.yml
       scheme: Pisces
+
 - 新建标签、分类、关于页面
 
       hexo new page "tags" 
@@ -89,9 +95,13 @@ date: 2019-04-20 18:09:00
       #schedule: /schedule/ || calendar
       #sitemap: /sitemap.xml || sitemap
       #commonweal: /404/ || heartbeat
+
 - 页脚设置,隐藏powered By Hex,next version,显示总访客数和总浏览量  
+
 修改blog\themes\hexo-theme-next\layout_partials\ footer.swig  
+
 - 添加阅读全文  
+
 在必要的地方添加<\!-- more -->即可  
 
 ### 5. 使用hexo-admin  
